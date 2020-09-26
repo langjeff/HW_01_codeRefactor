@@ -53,5 +53,5 @@ THEN I find a concise, descriptive title
 ```
 1. All changes above were commited with messages to this repository.
 2. Project website is available at:
-https://langjeff.github.io/HW_01_codeRefactor/
+[Site link](https://langjeff.github.io/HW_01_codeRefactor/)
 ```
