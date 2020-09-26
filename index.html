@@ -8,17 +8,21 @@
 <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="./assets/css/style.css">
-    <title>website</title>
+    <title>Horiseon</title>
 </head>
 
 <!-- establishes body element for website content -->
 <body>
     <!-- establishes header element for page -->
-    <div class="header">
+    <!-- replaced div element with semantic element -->
+    <header>
+
         <!-- h1 element for company name to be included in header -->
-        <h1>Hori<span class="seo"></span>seo</span>n</h1>
+        <!-- removed span class from H1 element due to lack of class 'seo'referenced -->
+        <h1>Horiseon</h1>
         <!-- list elements for header to provide links to content below -->
-        <div>
+        <!-- replace div element with semantic element -->
+        <nav>
             <ul>
                 <li>
                     <a href="#search-engine-optimization">Search Engine Optimization</a>
@@ -30,68 +34,75 @@
                     <a href="#social-media-marketing">Social Media Marketing</a>
                 </li>
             </ul>
-        </div>
-    </div>
+        </nav>
+    </header>
    
+    
+    <!-- main section for image seperating header and page content -->
+    <main></main>
     <!-- image file links and text for header link content boxes -->
-    <div class="hero"></div>
-    <div class="content">
-        <div class="search-engine-optimization">
-            <img src="./assets/images/search-engine-optimization.jpg" class="float-left" />
+    <!-- replaced 'content' div class with 'section' semantic element -->
+    <section>
+        <!-- replaced div id with semantic figure semantic element and provided id for nav links -->
+        <figure id="search-engine-optimization">
+            <img src="./assets/images/search-engine-optimization.jpg" alt="noteboook on workers desk, with SEO written on it, coffee, pens, laptop" class="float-left" />
             <h2>Search Engine Optimization</h2>
-            <p>
+            <!-- replace <p> element with figcaption element to match semantic styling -->
+            <figcaption>
                 The dominance of mobile internet use means that users are searching for the right business as they travel, shop, or sit on their couch at home. Search Engine Optimization (SEO) allows you to increase your visibility and find the right customers for your business.
-            </p>
-        </div>
-        <div id="online-reputation-management" class="online-reputation-management">
-            <img src="./assets/images/online-reputation-management.jpg" class="float-right" />
+            </figcaption>
+        </figure>
+        <!-- removed class reference for figure to align with semantic elements and reduce css classes -->
+        <figure id="online-reputation-management">
+            <img src="./assets/images/online-reputation-management.jpg" alt="person looking at laptop viewing online reputation chart" class="float-right" />
             <h2>Online Reputation Management</h2>
-            <p>
+            <figcaption>
                 The web is full of opinions, and some of these can be negative. Social media allows anyone with an internet connection to say whatever they want about your business. Online Reputation Management gives you the control over what potential customers see when they search for your business.
-            </p>
-        </div>
-        <div id="social-media-marketing" class="social-media-marketing">
-            <img src="./assets/images/social-media-marketing.jpg" class="float-left" />
+            </figcaption>
+        </figure>
+        <figure id="social-media-marketing">
+            <img src="./assets/images/social-media-marketing.jpg" alt="view of meeting with social media ideas being presented" class="float-left" />
             <h2>Social Media Marketing</h2>
-            <p>
+            <figcaption>
                 Social media continues to have a sizable influence on buying habits. Social media marketing helps you determine which platforms are suited to your brand, using analytics to find the right markets and increase your lead generation.
-            </p>
-        </div>
-    </div>
+            </figcaption>
+        </figure>
+    </section>
   
     <!-- image file links and text for benefits content -->
-    image
-    <div class="benefits">
-        <div class="benefit-lead">
+    <!-- changed atomic class to semantic element -->
+    <aside>
+        <figure id="benefit-lead">
             <h3>Lead Generation</h3>
-            <img src="./assets/images/lead-generation.png" />
-            <p>
+            <img src="./assets/images/lead-generation.png" alt="lead generation icon" />
+            <figcaption>
                 Inbound strategies for lead generation require less work for your business, bringing customers directly to your website.
-            </p>
-        </div>
-        <div class="benefit-brand">
+            </figcaption>
+        </figure>
+        <figure id="benefit-brand">
             <h3>Brand Awareness</h3>
-            <img src="./assets/images/brand-awareness.png" />
-            <p>
+            <img src="./assets/images/brand-awareness.png" alt="brand awareness icon" />
+            <figcaption>
                 Users find your business through paid and organic searches, increasing the search ranking and visibility for your business.
-            </p>
-        </div>
-        <div class="benefit-cost">
+            </figcaption>
+        </figure>
+        <figure id="benefit-cost">
             <h3>Cost Management</h3>
-            <img src="./assets/images/cost-management.png"></img>
-            <p>
+            <img src="./assets/images/cost-management.png" alt="cost management icon" >
+            <figcaption>
                 As the search ranking for your business increases, your advertising costs decrease, and you no longer need to advertise your page.
-            </p>
-        </div>
-    </div>
+            </figcaption>
+        </figure>
+    </aside>
 
     <!-- text and tags for footer elements -->
-    <div class="footer">
+    <!-- changed div class to semantic element -->
+    <footer>
         <h2>Made with ❤️️ by Horiseon</h2>
-        <p>
+        <figcaption>
             &copy; 2019 Horiseon Social Solution Services, Inc.
-        </p>
-    </div>
+        </figcaption>
+    </footer>
 </body>
 
 </html>
